@@ -1,0 +1,121 @@
+{
+  "format": "independently decompressible gzip JSONL shards",
+  "test_data_included": false,
+  "max_shard_mib": 90,
+  "splits": {
+    "train_with_s2e": {
+      "source_sha256": "a2c1f13ba65933c000e277eb6137e9cd20c7d31bba19e7900bdfaee742696515",
+      "rows": 152411,
+      "labels": {
+        "0": 67252,
+        "1": 85159
+      },
+      "datasets": {
+        "CHEAT": 2000,
+        "Ghostbuster": 3979,
+        "HC3": 9776,
+        "HC3_Plus": 3878,
+        "LLMTrace": 39498,
+        "M4GT_Bench": 11708,
+        "RAID": 81572
+      },
+      "shards": [
+        {
+          "file": "train_with_s2e.part-000.jsonl.gz",
+          "rows": 20000,
+          "bytes": 22345000,
+          "sha256": "c99ea005dce5fc97a51aeb5351f9d54411bf6294161bfba253551149510c8094"
+        },
+        {
+          "file": "train_with_s2e.part-001.jsonl.gz",
+          "rows": 20000,
+          "bytes": 22659798,
+          "sha256": "eafc37d6cef77b52411a591dced79308d892b0f3195453ae167e28769e2addfa"
+        },
+        {
+          "file": "train_with_s2e.part-002.jsonl.gz",
+          "rows": 20000,
+          "bytes": 22532091,
+          "sha256": "50235b8de87bec1e4857da478f26c4b6c2a20c9fd813565d6a74c6c8fc22139c"
+        },
+        {
+          "file": "train_with_s2e.part-003.jsonl.gz",
+          "rows": 20000,
+          "bytes": 22489448,
+          "sha256": "3d3e1054de01cc26a52d55874e97f7c223502dc069b3f0b736c7207022f9b43c"
+        },
+        {
+          "file": "train_with_s2e.part-004.jsonl.gz",
+          "rows": 20000,
+          "bytes": 22490187,
+          "sha256": "7b63b5fee3308b8fa15173a3d25ae664ffbc9acc8080daec1ba3d7669d444627"
+        },
+        {
+          "file": "train_with_s2e.part-005.jsonl.gz",
+          "rows": 20000,
+          "bytes": 22553489,
+          "sha256": "650978cf3f11f20dda8638e85a7dedf239c213eba6d576ac32791b705c86856a"
+        },
+        {
+          "file": "train_with_s2e.part-006.jsonl.gz",
+          "rows": 20000,
+          "bytes": 22655605,
+          "sha256": "8b42b94ac465244c2aff6291e311e75b0071781ff176177e82b0ffd1864ca0d6"
+        },
+        {
+          "file": "train_with_s2e.part-007.jsonl.gz",
+          "rows": 12411,
+          "bytes": 13802629,
+          "sha256": "0380d19e65c0c2eea631993681e1a57aa31d1cbdcaac1a95437ae1c6bad867a0"
+        }
+      ]
+    },
+    "calibration_with_s2e": {
+      "source_sha256": "b71a546b5fdb6bb4aa1090e8e7e596cbceaeb512d7a9e25d5ac214c60a55d075",
+      "rows": 6536,
+      "labels": {
+        "0": 2381,
+        "1": 4155
+      },
+      "datasets": {
+        "Ghostbuster": 2,
+        "HC3": 626,
+        "HC3_Plus": 126,
+        "LLMTrace": 3885,
+        "M4GT_Bench": 988,
+        "RAID": 909
+      },
+      "shards": [
+        {
+          "file": "calibration_with_s2e.part-000.jsonl.gz",
+          "rows": 6536,
+          "bytes": 7211822,
+          "sha256": "5937125d33552a323a68f650fd87b6c96fe21373c40b7bd58e1ad05be90608d1"
+        }
+      ]
+    },
+    "benchmark_validation": {
+      "source_sha256": "701f97ccb9746e5e0d216968e384e7c0036875b5b9a264c01fe1f9b82322136e",
+      "rows": 5000,
+      "labels": {
+        "0": 2500,
+        "1": 2500
+      },
+      "datasets": {
+        "HC3": 1000,
+        "HC3_Plus": 1000,
+        "LLMTrace": 1000,
+        "RAID_Extra_English_Code": 1000,
+        "XSum": 1000
+      },
+      "shards": [
+        {
+          "file": "benchmark_validation.part-000.jsonl.gz",
+          "rows": 5000,
+          "bytes": 3415923,
+          "sha256": "ee9fac307bda21c07037b2766dd6449cd16560ce3301c2d507b2056e36fda9f6"
+        }
+      ]
+    }
+  }
+}
